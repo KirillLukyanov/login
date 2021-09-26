@@ -9,7 +9,7 @@ import API_ENV from '../config/api.config';
 
 export async function login(email, password) {
   try {
-    const response = axios.post(
+    const response = await axios.post(
       `${API_ENV.apiUrl}/auth/login`,
       JSON.stringify({ email, password }),
       {

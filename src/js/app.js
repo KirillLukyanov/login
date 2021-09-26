@@ -38,17 +38,3 @@ async function onSubmit() {
     notify({ msg: 'Login failed', className: 'alert-danger' });
   }
 }
-
-// почему-то всего вызывается notify success, разобраться
-
-// setTimeout(() => {
-//   notify({ msg: 'Some notification 1', className: 'alert-danger' });
-// }, 1500);
-
-// setTimeout(() => {
-//   notify({ msg: 'Some notification 2', className: 'alert-primary' });
-// }, 2500);
-
-// setTimeout(() => {
-//   notify({ msg: 'Some notification 3', className: 'alert-warning' });
-// }, 5000);
